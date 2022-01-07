@@ -1,0 +1,43 @@
+body{
+    font: 20px Arial, sans-serif;
+}
+.navbar {
+    background-color:rgb(69, 16, 90);
+}
+
+/* forma de mudar cor definida no bootstrap: */
+.navbar-nav > .nav-item > .nav-link{
+    color: rgb(239, 221, 243);
+}
+
+#logo_page{
+    width: 80px;
+}
+
+.margin{
+    padding-top: 10px;
+    padding-bottom: 50px;
+}
+
+.sobre-mim{
+    background-color: rgb(224, 129, 161);
+    color: oldlace;
+}
+
+#sobremim_img{
+    width: 300px;
+    height: 300px;
+}
+
+.parceiros{
+    background-color: violet;
+}
+
+.ajuste_img{
+    width: 100%; /* conserta a forma que a imagem aparece nas colunas*/
+}
+
+.bg-footer{
+    background-color: black;
+    color: white;
+}
