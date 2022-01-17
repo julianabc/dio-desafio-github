@@ -55,6 +55,7 @@ input[type="text"] {
   border: 1px solid black;
 }
 
+/* conforme estiver checado, muda a decoração */
 :checked + label {
   text-decoration: line-through;
   color: grey;

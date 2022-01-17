@@ -1,13 +1,13 @@
 const form = document.getElementById('task-form');
-const taskList = document.getElementById('tasks');
+const listaTarefa = document.getElementById('to-doTasks');
 
 
 form.onsubmit = function (e) {
 	e.preventDefault();
 
 	// manda o valor para as tarefas
-	const inputField = document.getElementById('to-do_ID');
-	addTask(inputField.value);
+	const inputCampo = document.getElementById('to-do_ID');
+	adicionarTask(inputCampo.value); // pega o valor do campo
 
 	// reseta o formulario
 	form.reset();
@@ -15,30 +15,30 @@ form.onsubmit = function (e) {
 
 
 
-function addTask(description) {
+function adicionarTask(desc) {
 
 	// cria elemnentos do html
-	const taskContainer = document.createElement('div');
-	const newTask = document.createElement('input');
-	const taskLabel = document.createElement('label');
+	const tarefaDiv = document.createElement('div');
+	const novaTarefa = document.createElement('input');
+	const tarefaLabel = document.createElement('label');
 
 	// cria a tarefa
-	const taskDescriptionNode = document.createTextNode(description);
+	const tarefaDescNode = document.createTextNode(desc);
 
 	// seta atributos da tarefa, incluindo nome e id com o mesmo nome da tarefa
-	newTask.setAttribute('type', 'checkbox');
-	newTask.setAttribute('name', description);
-	newTask.setAttribute('id', description);
+	novaTarefa.setAttribute('type', 'checkbox');
+	novaTarefa.setAttribute('name', desc);
+	novaTarefa.setAttribute('id', desc);
 
 	// seta atrbutos da label 
-	taskLabel.setAttribute('for', description);
+	tarefaLabel.setAttribute('for', desc);
 
 	// cria o nó
-	taskLabel.appendChild(taskDescriptionNode);
+	tarefaLabel.appendChild(tarefaDescNode);
 
-	taskContainer.classList.add('task-item');
-	taskContainer.appendChild(newTask);
-	taskContainer.appendChild(taskLabel);
+	tarefaDiv.classList.add('task-item');
+	tarefaDiv.appendChild(novaTarefa);
+	tarefaDiv.appendChild(tarefaLabel);
 
-	taskList.appendChild(taskContainer);
+	listaTarefa.appendChild(tarefaDiv);
 }
