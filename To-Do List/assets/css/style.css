@@ -1,27 +1,61 @@
-body{
-    text-align: center;
-    font-family: Arial, sans-serif;
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600&display=swap");
+
+* {
+  font-family: "Open Sans", sans-serif;
 }
 
-#to-do_ID{
-    height: 25px;
-    width: 150px;
-    border-radius: 50px;
-    border: 1px solid black;
-    text-align: center;
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .btn-add{
-    width: 120px;
-    border-radius: 100px;
-    border: 2px solid lightcoral;
-    background-color: rgb(241, 214, 214);
-    color: lightcoral;
-    font-size: 15px;
-    font-weight: bold;
+  width: 120px;
+  border-radius: 100px;
+  border: 2px solid lightcoral;
+  background-color: rgb(241, 214, 214);
+  color: lightcoral;
+  font-size: 15px;
+  font-weight: bold;
 
 }
 
-.container-lista{
-    margin: 50px 0;
+#to-do_ID{
+  height: 25px;
+  width: 150px;
+  border-radius: 50px;
+  border: 1px solid black;
+  text-align: center;
+}
+
+
+input[type="text"] {
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid black;
+}
+
+#tasks {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.task-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+input[type="text"] {
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid black;
+}
+
+:checked + label {
+  text-decoration: line-through;
+  color: grey;
 }

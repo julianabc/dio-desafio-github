@@ -2,25 +2,19 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <title>To Do List</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>To-do list</title>
 </head>
 <body>
-    <h1>To-do List</h1>
-
-    <div class="container-lista">
-    <input type="text" name="to-do_name" id="to-do_ID" placeholder="Digite a sua tarefa">
-    <button name="btn-adc" id="btn-adc_ID" class="btn-add">Adicionar</button>
+    <h1>To-do list</h1>
+    <div id="list">
+        <form id="task-form">
+            <input id="to-do_ID" name="tarefa" type="text" placeholder="Digite aqui sua tarefa" />
+            <button type="submit" class="btn-add">Adicionar</button>
+        </form>
+        <div id="tasks"></div>
     </div>
-
-    <div class="container-checkbox">
-        <input type="checkbox" id="scales" name="scales" checked>Scales
-    </div>
-
-
-    <!-- Script javascript aqui -->
-    <script src="assets/js/script.js"></script>
+    <script src="assets/js/scripts.js"></script>
 </body>
 </html>
