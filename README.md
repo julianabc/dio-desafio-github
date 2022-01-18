@@ -4,3 +4,5 @@ Primeiro repositório para a plataforma Dio. Utilizado para organizar os projeto
 - Cinema em Foco: Blog sobre cinema, até o momento feito apenas em HTML/CSS.
 - Aula_Bootstrap: Portfolio em construção. Vou mudar a temática dada em curso. 
 - Contador: Contador feito em javascript. Código comentado e passivel a evolução.
+- To-Do: Exemplo de uma "to-do list" utilizando JavaScript.
+- Calculadora: Calculadora simples feita em Javascript.
